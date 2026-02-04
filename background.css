@@ -1,0 +1,202 @@
+.space-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: linear-gradient(to bottom, #000000 0%, #050505 100%);
+    overflow: hidden;
+}
+
+/* Twinkle Animation */
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.stars-small {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 104px 156px #FFF, 543px 1854px #FFF, 892px 643px #FFF, 1234px 213px #FFF, 156px 892px rgba(168, 85, 247, 0.8), 1843px 123px #FFF, 932px 1643px #FFF, 345px 876px #FFF, 678px 321px #FFF, 123px 1578px #FFF, 1765px 432px rgba(168, 85, 247, 0.8), 987px 123px #FFF, 456px 789px #FFF, 1432px 654px #FFF, 321px 987px #FFF, 1654px 321px #FFF, 876px 1432px #FFF, 543px 654px #FFF, 1098px 876px #FFF, 234px 1987px #FFF, 1678px 543px #FFF, 890px 1234px #FFF, 432px 1765px #FFF, 1543px 987px #FFF, 765px 432px #FFF, 1234px 765px #FFF, 1987px 234px #FFF, 654px 1678px #FFF, 321px 543px #FFF, 1432px 1098px #FFF, 876px 321px #FFF, 543px 1432px #FFF, 123px 987px #FFF, 1765px 654px #FFF, 987px 432px #FFF, 456px 1543px #FFF, 1321px 876px #FFF, 234px 321px #FFF, 1567px 1432px #FFF, 890px 543px #FFF, 432px 987px #FFF, 1234px 321px #FFF, 1876px 1654px #FFF, 654px 123px #FFF, 321px 1789px #FFF, 1432px 432px #FFF, 876px 1098px #FFF, 543px 234px #FFF, 1098px 1567px #FFF, 765px 890px #FFF, 1654px 1321px #FFF, 187px 654px #FFF, 1432px 234px #FFF, 987px 1765px #FFF, 543px 987px #FFF, 1234px 543px #FFF, 1765px 1234px #FFF;
+    animation: animeStar 50s linear infinite, twinkle 3s ease-in-out infinite;
+}
+
+.stars-small:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 104px 156px #FFF, 543px 1854px #FFF, 892px 643px #FFF, 1234px 213px #FFF, 156px 892px rgba(168, 85, 247, 0.8), 1843px 123px #FFF, 932px 1643px #FFF, 345px 876px #FFF, 678px 321px #FFF, 123px 1578px #FFF, 1765px 432px rgba(168, 85, 247, 0.8), 987px 123px #FFF, 456px 789px #FFF, 1432px 654px #FFF, 321px 987px #FFF, 1654px 321px #FFF, 876px 1432px #FFF, 543px 654px #FFF, 1098px 876px #FFF, 234px 1987px #FFF, 1678px 543px #FFF, 890px 1234px #FFF, 432px 1765px #FFF, 1543px 987px #FFF, 765px 432px #FFF, 1234px 765px #FFF, 1987px 234px #FFF, 654px 1678px #FFF, 321px 543px #FFF, 1432px 1098px #FFF, 876px 321px #FFF, 543px 1432px #FFF, 123px 987px #FFF, 1765px 654px #FFF, 987px 432px #FFF, 456px 1543px #FFF, 1321px 876px #FFF, 234px 321px #FFF, 1567px 1432px #FFF, 890px 543px #FFF, 432px 987px #FFF, 1234px 321px #FFF, 1876px 1654px #FFF, 654px 123px #FFF, 321px 1789px #FFF, 1432px 432px #FFF, 876px 1098px #FFF, 543px 234px #FFF, 1098px 1567px #FFF, 765px 890px #FFF, 1654px 1321px #FFF, 187px 654px #FFF, 1432px 234px #FFF, 987px 1765px #FFF, 543px 987px #FFF, 1234px 543px #FFF, 1765px 1234px #FFF;
+}
+
+.stars-medium {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 345px 1765px #FFF, 1876px 432px #FFF, 654px 987px #FFF, 123px 1543px #FFF, 1432px 543px #FFF, 876px 1234px #FFF, 234px 876px #FFF, 1654px 1098px #FFF, 543px 321px #FFF, 1098px 1876px #FFF, 765px 654px rgba(168, 85, 247, 0.8), 1321px 234px #FFF, 1987px 1432px #FFF, 432px 890px #FFF, 987px 1654px #FFF, 156px 1321px #FFF, 1765px 543px #FFF, 890px 432px #FFF, 321px 1234px #FFF, 1543px 765px #FFF;
+    animation: animeStar 100s linear infinite, twinkle 5s ease-in-out infinite;
+}
+
+.stars-medium:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 345px 1765px #FFF, 1876px 432px #FFF, 654px 987px #FFF, 123px 1543px #FFF, 1432px 543px #FFF, 876px 1234px #FFF, 234px 876px #FFF, 1654px 1098px #FFF, 543px 321px #FFF, 1098px 1876px #FFF, 765px 654px rgba(168, 85, 247, 0.8), 1321px 234px #FFF, 1987px 1432px #FFF, 432px 890px #FFF, 987px 1654px #FFF, 156px 1321px #FFF, 1765px 543px #FFF, 890px 432px #FFF, 321px 1234px #FFF, 1543px 765px #FFF;
+}
+
+.stars-large {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 876px 543px #FFF, 234px 1234px #FFF, 1654px 876px #FFF, 543px 1543px #FFF, 1098px 321px #FFF, 1876px 1432px #FFF, 432px 654px #FFF, 1321px 1098px #FFF, 765px 1765px #FFF, 156px 234px rgba(168, 85, 247, 0.8);
+    border-radius: 50%;
+    animation: animeStar 150s linear infinite, twinkle 7s ease-in-out infinite;
+}
+
+.stars-large:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 876px 543px #FFF, 234px 1234px #FFF, 1654px 876px #FFF, 543px 1543px #FFF, 1098px 321px #FFF, 1876px 1432px #FFF, 432px 654px #FFF, 1321px 1098px #FFF, 765px 1765px #FFF, 156px 234px rgba(168, 85, 247, 0.8);
+    border-radius: 50%;
+}
+
+@keyframes animeStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+/* Shooting Star Animation */
+.shooting-star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px #699bff);
+    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+    opacity: 0;
+}
+
+.shooting-star::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    animation: shining 3000ms ease-in-out infinite;
+}
+
+.shooting-star::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    animation: shining 3000ms ease-in-out infinite;
+}
+
+/* Randomize shooting stars */
+.shooting-star:nth-child(1) {
+    top: 0;
+    left: 50%;
+    animation-delay: 0ms;
+}
+
+.shooting-star:nth-child(1)::before,
+.shooting-star:nth-child(1)::after {
+    animation-delay: 0ms;
+}
+
+.shooting-star:nth-child(2) {
+    top: 20%;
+    left: 80%;
+    animation-delay: 2500ms;
+}
+
+.shooting-star:nth-child(2)::before,
+.shooting-star:nth-child(2)::after {
+    animation-delay: 2500ms;
+}
+
+.shooting-star:nth-child(3) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 5000ms;
+}
+
+.shooting-star:nth-child(3)::before,
+.shooting-star:nth-child(3)::after {
+    animation-delay: 5000ms;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    30% {
+        width: 100px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes shooting {
+    0% {
+        transform: translateX(0) translateY(0) rotateZ(45deg);
+    }
+
+    100% {
+        transform: translateX(300px) translateY(300px) rotateZ(45deg);
+    }
+}
+
+@keyframes shining {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 30px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
