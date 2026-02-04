@@ -109,8 +109,8 @@ h4 {
 }
 
 .btn-lg {
-    padding: 16px 32px;
-    font-size: 1.125rem;
+    padding: 20px 48px;
+    font-size: 1.25rem;
 }
 
 .glow {
@@ -272,7 +272,8 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
+    margin-bottom: 80px;
 }
 
 .stats {
@@ -347,92 +348,7 @@ h4 {
     -webkit-text-fill-color: transparent;
 }
 
-/* New Stats Section */
-.stats-section {
-    padding: 60px 0;
-    margin-top: -40px;
-    /* Slight overlap or pull-up */
-    position: relative;
-    z-index: 10;
-}
 
-.stats-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    padding: 40px 60px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-}
-
-.avatar-group-large {
-    display: flex;
-    align-items: center;
-}
-
-.avatar-large {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border: 4px solid #000;
-    margin-left: -24px;
-    background: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-}
-
-.avatar-large:first-child {
-    margin-left: 0;
-}
-
-.avatar-large.count {
-    background: var(--primary-color);
-}
-
-.stats-content-large {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-}
-
-.stat-number-large {
-    font-size: 5rem;
-    font-weight: 800;
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -0.03em;
-}
-
-.stat-label-large {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-top: 8px;
-}
-
-@media (max-width: 768px) {
-    .stats-wrapper {
-        flex-direction: column;
-        gap: 24px;
-        padding: 32px;
-    }
-
-    .stat-number-large {
-        font-size: 3.5rem;
-    }
-}
 
 @media (max-width: 968px) {
     .hero-container {
@@ -471,12 +387,12 @@ h4 {
 
 /* Sections */
 .section {
-    padding: 100px 0;
+    padding: 160px 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 100px;
 }
 
 .section-title {
