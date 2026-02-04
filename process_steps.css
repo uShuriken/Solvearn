@@ -1,0 +1,159 @@
+/* Process Steps Section */
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 60px 0;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Vertical dashed line connector for desktop */
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 50%;
+    width: 2px;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.2) 50%);
+    background-size: 100% 20px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.step-card {
+    position: relative;
+    padding: 3px;
+    /* Gradient border width */
+    border-radius: 40px;
+    background: transparent;
+    width: 100%;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Unique Gradient Backgrounds per Step */
+.step-1 {
+    background: radial-gradient(circle at top left, rgba(163, 230, 53, 0.15), rgba(0, 0, 0, 0) 70%);
+}
+
+.step-2 {
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), rgba(0, 0, 0, 0) 70%);
+}
+
+.step-3 {
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), rgba(0, 0, 0, 0) 70%);
+}
+
+.step-4 {
+    background: radial-gradient(circle at top right, rgba(168, 85, 247, 0.15), rgba(0, 0, 0, 0) 70%);
+}
+
+.step-5 {
+    background: radial-gradient(circle at top left, rgba(20, 184, 166, 0.15), rgba(0, 0, 0, 0) 70%);
+}
+
+.step-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.step-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 38px;
+    /* Inner radius */
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.step-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text h3 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.step-text p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.step-visual {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-visual {
+    transform: perspective(1000px) rotateY(2deg) translateY(-5px);
+}
+
+.step-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 968px) {
+    .process-steps {
+        gap: 60px;
+    }
+
+    .process-steps::before {
+        left: 20px;
+        /* Line follows left side on mobile */
+    }
+
+    .step-content,
+    .step-content.reverse {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .step-badge {
+        left: 50%;
+    }
+}
