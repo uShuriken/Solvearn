@@ -281,15 +281,16 @@ h4 {
     height: auto;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 0.6;
     mix-blend-mode: screen;
-    /* Blend with dark background */
+    /* Keep screen to make black background invisible and white lines pop */
 }
 
 .hero-bg-rocket img {
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.4));
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.6));
+    /* Subtle glow on lines */
 }
 
 /* Highlighted Text in Subtitle */
